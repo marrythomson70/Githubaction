@@ -1,14 +1,14 @@
 name: Hello World
-  on:
+on:
   push: 
     branches:
-  - main
+      - main
   jobs:
-    first-hello-world-job
+    first-hello-world-job:
     runs-on: ubuntu-latest
   steps:
-  - name: Checkour code
-  uses: actions/checkout@v3
-  - name: Print message
-  run: echo "Hello world GA Testing"
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Print message
+      run: echo "Hello world GA Testing"
     
