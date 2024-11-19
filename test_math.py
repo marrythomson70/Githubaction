@@ -21,7 +21,7 @@ run-pytest:
   with: 
     python-version: 3.9
 - name: Install dependecies
-run: 
+  run: |
   python -n pip install --upgrade pip 
   pip install pytest
 - name: Run testcases
